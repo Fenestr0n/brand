@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 .center {
   padding-left: calc(50% - 570px);
   padding-right: calc(50% - 570px);
@@ -39,6 +43,51 @@ a {
   }
 }
 
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: calc(50% - 800px);
+  padding-right: calc(50% - 800px);
+  background: linear-gradient(
+    to right,
+    rgba(113, 103, 105, 0.08) 50%,
+    #f1e4e6 50%
+  );
+  margin-bottom: 65px;
+
+  &__photo {
+    width: 50%;
+  }
+
+  &__content {
+    padding-left: 60px;
+  }
+
+  &__info {
+    border-left: 12px solid #f16d7f;
+    padding-left: 16px;
+  }
+
+  &__title {
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  &__heading {
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 368px);
@@ -54,6 +103,26 @@ a {
 
     &__right {
       padding-right: 16px;
+    }
+  }
+
+  .hero {
+    margin-bottom: 20px;
+
+    &__photo {
+      width: 50%;
+    }
+
+    &__content {
+      padding-left: 40px;
+    }
+
+    &__title {
+      font-size: 44px;
+    }
+
+    &__heading {
+      font-size: 24px;
     }
   }
 }
@@ -74,6 +143,32 @@ a {
   .cart {
     display: none;
   }
+
+  .hero {
+    background: #f1e4e6;
+    margin-bottom: 64px;
+
+    &__photo {
+      display: none;
+    }
+
+    &__content {
+      padding-left: 0;
+    }
+
+    &__info {
+      margin-top: 148px;
+      margin-bottom: 148px;
+    }
+
+    &__title {
+      font-size: 38px;
+    }
+
+    &__heading {
+      font-size: 20px;
+    }
+  }
 }
 
 @media (min-width: 50px) and (max-width: 374px) {
@@ -91,5 +186,31 @@ a {
   }
   .cart {
     display: none;
+  }
+
+  .hero {
+    background: #f1e4e6;
+    margin-bottom: 64px;
+
+    &__photo {
+      display: none;
+    }
+
+    &__content {
+      padding-left: 0;
+    }
+
+    &__info {
+      margin-top: 148px;
+      margin-bottom: 148px;
+    }
+
+    &__title {
+      font-size: 38px;
+    }
+
+    &__heading {
+      font-size: 20px;
+    }
   }
 }
