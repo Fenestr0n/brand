@@ -43,7 +43,6 @@ img {
 
 .hero {
   display: flex;
-  justify-content: center;
   align-items: center;
   padding-left: calc(50% - 800px);
   padding-right: calc(50% - 800px);
@@ -77,6 +76,52 @@ img {
   line-height: normal;
 }
 
+.offer {
+  display: grid;
+  gap: 30px;
+  margin-bottom: 96px;
+}
+.offer__items_top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.offer__item {
+  position: relative;
+}
+.offer__item_big {
+  position: relative;
+}
+.offer__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.offer__text {
+  color: #fff;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.offer__heading {
+  color: #f16d7f;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .center {
     padding-left: calc(50% - 368px);
@@ -106,6 +151,13 @@ img {
   .hero__heading {
     font-size: 24px;
   }
+  .offer {
+    gap: 19px;
+    margin-bottom: 154px;
+  }
+  .offer__items_top {
+    gap: 19px;
+  }
 }
 @media (min-width: 375px) and (max-width: 767px) {
   .center {
@@ -122,6 +174,7 @@ img {
     display: none;
   }
   .hero {
+    justify-content: center;
     background: #f1e4e6;
     margin-bottom: 64px;
   }
@@ -140,6 +193,20 @@ img {
   }
   .hero__heading {
     font-size: 20px;
+  }
+  img {
+    min-height: 100%;
+  }
+  .offer {
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+  .offer__items_top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .offer__item_big {
+    height: 111px;
   }
 }
 @media (min-width: 50px) and (max-width: 374px) {
@@ -157,6 +224,7 @@ img {
     display: none;
   }
   .hero {
+    justify-content: center;
     background: #f1e4e6;
     margin-bottom: 64px;
   }
@@ -175,5 +243,19 @@ img {
   }
   .hero__heading {
     font-size: 20px;
+  }
+  img {
+    min-height: 100%;
+  }
+  .offer {
+    gap: 32px;
+    margin-bottom: 64px;
+  }
+  .offer__items_top {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .offer__item_big {
+    height: 111px;
   }
 }/*# sourceMappingURL=style.css.map */
