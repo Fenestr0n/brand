@@ -145,7 +145,6 @@ img {
   align-items: center;
   gap: 30px;
   text-align: left;
-  padding-bottom: 48px;
 }
 .product-box__button {
   color: #f26376;
@@ -155,6 +154,7 @@ img {
   line-height: normal;
   border: 1px solid #ff6a6a;
   padding: 15px 39px;
+  margin-bottom: 64px;
 }
 
 .product {
