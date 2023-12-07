@@ -282,6 +282,24 @@ li {
   }
 }
 
+.group {
+  min-height: 448px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(img/layer.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.comments {
+}
+
+.subscription {
+}
+
 .footer {
   background-color: $colorBGFooter;
   display: flex;
