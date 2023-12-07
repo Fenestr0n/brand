@@ -253,6 +253,10 @@ li {
 
 .footer {
   background-color: #222224;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 .footer__copyright {
   color: #fbfbfb;
@@ -260,6 +264,12 @@ li {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.footer__social-list {
+  display: flex;
+  gap: 7px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .footer__social-item {
   width: 32px;
@@ -356,9 +366,6 @@ li {
   .hero__heading {
     font-size: 20px;
   }
-  img {
-    min-height: 100%;
-  }
   .offer {
     gap: 32px;
     margin-bottom: 64px;
@@ -383,5 +390,17 @@ li {
     gap: 46px;
     padding-top: 48px;
     padding-bottom: 81px;
+  }
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer__copyright {
+    padding-bottom: 9px;
+  }
+  .footer__social-list {
+    padding-top: 43px;
+    padding-bottom: 40px;
   }
 }/*# sourceMappingURL=style.css.map */

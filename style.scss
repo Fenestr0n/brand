@@ -284,6 +284,10 @@ li {
 
 .footer {
   background-color: $colorBGFooter;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
   &__copyright {
     color: $colorTextFooter;
@@ -294,6 +298,10 @@ li {
   }
 
   &__social-list {
+    display: flex;
+    gap: 7px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   &__social-item {
@@ -417,10 +425,6 @@ li {
     }
   }
 
-  img {
-    min-height: 100%;
-  }
-
   .offer {
     gap: 32px;
     margin-bottom: 64px;
@@ -451,6 +455,21 @@ li {
       gap: 46px;
       padding-top: 48px;
       padding-bottom: 81px;
+    }
+  }
+
+  .footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-around;
+
+    &__copyright {
+      padding-bottom: 9px;
+    }
+
+    &__social-list {
+      padding-top: 43px;
+      padding-bottom: 40px;
     }
   }
 }
