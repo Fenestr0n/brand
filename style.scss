@@ -52,6 +52,11 @@ li {
     align-items: center;
     gap: 33px;
   }
+
+  &__icon:hover path {
+    fill: $colorSelectSite;
+    transition: all 0.5s;
+  }
 }
 
 .hero {
@@ -190,6 +195,12 @@ li {
     border: 1px solid $colorBorderBtnProduct;
     padding: 15px 39px;
   }
+
+  &__button:hover {
+    color: $colorTextInverse;
+    background-color: $colorSelectSite;
+    transition: all 0.5s;
+  }
 }
 
 .product {
@@ -220,6 +231,11 @@ li {
     font-weight: 400;
     line-height: normal;
     padding-bottom: 12px;
+  }
+
+  &__heading:hover {
+    color: $colorSelectSite;
+    transition: all 0.5s;
   }
 
   &__text {
@@ -345,10 +361,15 @@ li {
       position: relative;
       border-top-right-radius: 50px;
       border-bottom-right-radius: 50px;
-      color: white;
-      background-color: #e05c6e;
+      color: $colorBody;
+      background-color: $colorSubButton;
       padding: 16px 22px;
       border: none;
+    }
+
+    &__button:hover {
+      color: $colorText;
+      transition: all 0.5s;
     }
   }
 }
@@ -382,6 +403,15 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  &__social-item:hover {
+    background-color: $colorSelectSite;
+    transition: all 0.5s;
+  }
+
+  &__social-item:hover path {
+    fill: $colorBody;
   }
 }
 
