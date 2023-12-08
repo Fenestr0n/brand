@@ -105,6 +105,40 @@ li {
   background-color: #f7f7f7;
 }
 
+.description__title {
+  color: #f16d7f;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 12px;
+}
+.description__devider {
+  width: 63px;
+  height: 3px;
+  background-color: #f16d7f;
+  margin-bottom: 12px;
+}
+.description__subtitle {
+  color: #4d4d4d;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-bottom: 48px;
+}
+.description__text {
+  padding-bottom: 32px;
+}
+.description__price {
+  padding-bottom: 65px;
+}
+.description__line {
+  padding-bottom: 65px;
+}
+.description__sort-box {
+  padding-bottom: 48px;
+}
 .product-box {
   margin-bottom: 128px;
   text-align: center;

@@ -117,6 +117,61 @@ li {
   background-color: $colorBGHeroProduct;
 }
 
+.description {
+  &__title {
+    color: $colorSelectSite;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 12px;
+  }
+
+  &__devider {
+    width: 63px;
+    height: 3px;
+    background-color: $colorSelectSite;
+    margin-bottom: 12px;
+  }
+
+  &__subtitle {
+    color: $colorSubtitleDesc;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-bottom: 48px;
+  }
+
+  &__text {
+    padding-bottom: 32px;
+  }
+
+  &__price {
+    padding-bottom: 65px;
+  }
+
+  &__line {
+    padding-bottom: 65px;
+  }
+
+  &__sort-box {
+    padding-bottom: 48px;
+  }
+
+  &__details {
+  }
+
+  &__summary {
+  }
+
+  &__sort-list {
+  }
+
+  &__sort-item {
+  }
+}
+
 .product-box {
   margin-bottom: 128px;
   text-align: center;
