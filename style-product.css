@@ -179,8 +179,65 @@ li {
 .description__sort-box {
   display: flex;
   flex-direction: row;
-  padding-bottom: 48px;
+  gap: 23px;
 }
+.description__details {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+}
+.description__summary {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.description__arrow {
+  padding-left: 9px;
+}
+.description__sort-list {
+  background: #fff;
+  box-shadow: 6px 4px 25px 0px rgba(0, 0, 0, 0.21);
+  padding: 7px 30px 0px 9px;
+  position: absolute;
+}
+.description__sort-item {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #6f6e6e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 9px;
+}
+.description__button {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ff6a6a;
+  margin-top: 48px;
+}
+.description__icon {
+  padding-right: 23px;
+  padding-left: 24px;
+}
+.description__text-btn {
+  color: #f26376;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 57px;
+}
+
 .product-box {
   margin-bottom: 128px;
   text-align: center;
