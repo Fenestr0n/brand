@@ -303,6 +303,12 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-image: url(img/background.png);
+  background-color: lightgray;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position-y: 140px;
+  background-attachment: fixed;
 
   .comments {
     width: $thirdSite;

@@ -86,10 +86,21 @@ li {
   &__item:not(:last-child)::after {
     content: "/";
     padding: 0 8px;
+    color: $colorLinkbreadcrumbs;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
   }
 
   &__item:hover .breadcrumbs__link {
     color: $colorSelectSite;
+    transition: all 0.5s;
+  }
+
+  &__item:hover:last-child .breadcrumbs__link {
+    color: $colorLinkbreadcrumbs;
+    transition: all 0.5s;
   }
 
   &__item:last-child .breadcrumbs__link {
@@ -115,15 +126,32 @@ li {
   justify-content: center;
   align-items: center;
   background-color: $colorBGHeroProduct;
+  border: 1px solid #eaeaea;
 }
 
 .description {
+  &__content {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #eaeaea;
+    margin: -65px;
+    position: relative;
+    z-index: 1;
+    background-color: $colorBody;
+    margin-bottom: 130px;
+  }
+
   &__title {
     color: $colorSelectSite;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    padding-top: 65px;
     padding-bottom: 12px;
   }
 
@@ -144,18 +172,34 @@ li {
   }
 
   &__text {
+    width: 555px;
+    color: #5e5e5e;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
     padding-bottom: 32px;
   }
 
   &__price {
+    color: #ef5b70;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
     padding-bottom: 65px;
   }
 
   &__line {
-    padding-bottom: 65px;
+    width: 640px;
+    height: 1px;
+    background-color: #eaeaea;
+    margin-bottom: 65px;
   }
 
   &__sort-box {
+    display: flex;
+    flex-direction: row;
     padding-bottom: 48px;
   }
 
@@ -247,7 +291,12 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f4f4f4b2;
+  background-image: url(img/background.png);
+  background-color: lightgray;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position-y: 140px;
+  background-attachment: fixed;
 
   .comments {
     width: $thirdSite;
@@ -398,31 +447,12 @@ li {
 //     }
 //   }
 
-//   .offer {
-//     gap: 19px;
-//     margin-bottom: 154px;
-
-//     &__items_top {
-//       gap: 19px;
-//     }
-//   }
-
 //   .product-box {
 //     margin-bottom: 64px;
 
 //     &__content {
 //       gap: 16px;
 //       padding-bottom: 32px;
-//     }
-//   }
-
-//   .feature {
-//     &__list {
-//       flex-direction: column;
-//       align-items: center;
-//       gap: 48px;
-//       padding-top: 48px;
-//       padding-bottom: 64px;
 //     }
 //   }
 
@@ -493,36 +523,12 @@ li {
 //     }
 //   }
 
-//   .offer {
-//     gap: 32px;
-//     margin-bottom: 64px;
-
-//     &__items_top {
-//       grid-template-columns: 1fr;
-//       gap: 32px;
-//     }
-
-//     &__item_big {
-//       height: 111px;
-//     }
-//   }
-
 //   .product-box {
 //     margin-bottom: 96px;
 
 //     &__content {
 //       gap: 16px;
 //       padding-bottom: 40px;
-//     }
-//   }
-
-//   .feature {
-//     &__list {
-//       flex-direction: column;
-//       align-items: center;
-//       gap: 46px;
-//       padding-top: 48px;
-//       padding-bottom: 81px;
 //     }
 //   }
 

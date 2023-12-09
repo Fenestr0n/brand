@@ -78,9 +78,19 @@ li {
 .breadcrumbs__item:not(:last-child)::after {
   content: "/";
   padding: 0 8px;
+  color: #636363;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }
 .breadcrumbs__item:hover .breadcrumbs__link {
   color: #f16d7f;
+  transition: all 0.5s;
+}
+.breadcrumbs__item:hover:last-child .breadcrumbs__link {
+  color: #636363;
+  transition: all 0.5s;
 }
 .breadcrumbs__item:last-child .breadcrumbs__link {
   color: #f16d7f;
@@ -103,14 +113,30 @@ li {
   justify-content: center;
   align-items: center;
   background-color: #f7f7f7;
+  border: 1px solid #eaeaea;
 }
 
+.description__content {
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #eaeaea;
+  margin: -65px;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  margin-bottom: 130px;
+}
 .description__title {
   color: #f16d7f;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  padding-top: 65px;
   padding-bottom: 12px;
 }
 .description__devider {
@@ -128,15 +154,31 @@ li {
   padding-bottom: 48px;
 }
 .description__text {
+  width: 555px;
+  color: #5e5e5e;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
   padding-bottom: 32px;
 }
 .description__price {
+  color: #ef5b70;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
   padding-bottom: 65px;
 }
 .description__line {
-  padding-bottom: 65px;
+  width: 640px;
+  height: 1px;
+  background-color: #eaeaea;
+  margin-bottom: 65px;
 }
 .description__sort-box {
+  display: flex;
+  flex-direction: row;
   padding-bottom: 48px;
 }
 .product-box {
@@ -207,7 +249,12 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(244, 244, 244, 0.6980392157);
+  background-image: url(img/background.png);
+  background-color: lightgray;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position-y: 140px;
+  background-attachment: fixed;
 }
 .group .comments {
   width: 360px;
